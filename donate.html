@@ -28,6 +28,29 @@
 		.tusc-font{
 			font-family: 'tuscfont'
 		}
+		
+		@media only screen and (max-width: 600px) {
+		  .donate-button {
+			width:100%;
+			font-size:16pt;
+		  }
+		  
+		  .donation-button-container {
+		  
+		  }
+		}
+		
+		@media only screen and (min-width: 601px) {
+		  .donate-button {
+			width:300px;
+			font-size:30pt;
+		  }
+		  
+		  .donation-button-container {
+			margin-top:50px;
+			margin-bottom:50px;
+		  }
+		}
     </style>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
@@ -50,16 +73,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0 navbar-right">
           <li class="nav-item">
-            <a class="nav-link active btn btn-primary m-1" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link btn btn-danger m-1" style="color:white" href="index.html">Home</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link btn btn-danger m-1" style="color:#eeeeee" href="about.html">About</a>
+          </li>-->
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger m-1" style="color:white" href="join.html">Join the Campaign</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn btn-warning m-1" style="color:black" href="join.html">Join the Campaign</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-success m-1" style="color:#eeeeee" href="donate.html">Donate</a>
+            <a class="nav-link btn btn-danger m-1" style="color:white" href="donate.html">Donate</a>
           </li>
         </ul>
       </div>
@@ -69,7 +92,16 @@
 
 <main style="overflow:auto">
 	<div class="container" style="margin-top:10px;">
-		<h1>About</h1>
+		<h1>Help support the campaign</h1>
+		<p>As the party for ordinary working people, unsurpringly we don't have big business backers like the Tories or Starmer's Labour to fund the campaign. Any donations, big or small, to help us get our message out in this by-election are greatly appreciated.</p>
+		<div class="donation-button-container" style="width:100%;text-align:center;">
+			<a href="https://www.paypal.com/donate/?hosted_button_id=8THLEEGRBSCPQ" style="margin:5px" class="donate-button btn btn-success">£5</a><br />
+			<a href="https://www.paypal.com/donate/?hosted_button_id=HLLXETBSVJ5L8" style="margin:5px" class="donate-button btn btn-warning">£10</a><br />
+			<a href="https://www.paypal.com/donate/?hosted_button_id=8LQ2TPLLWWWRC" style="margin:5px" class="donate-button btn btn-danger">£20</a><br />
+			<a href="https://www.paypal.com/donate/?hosted_button_id=XV5SNW6P85BP6" style="margin:5px" class="donate-button btn btn-primary">£30</a><br />
+			<a href="https://www.paypal.com/donate/?hosted_button_id=563JH2XQEZ7DE" style="margin:5px" class="donate-button btn btn-info">£50</a>
+		</div>
+		<p>If you want to donate more than £50 or on behalf of a group or trade union, please contact us at <a href="mailto:TUSCBirmingham@gmail.com">TUSCBirmingham@gmail.com</a>.
 	</div>
 </main>
 
