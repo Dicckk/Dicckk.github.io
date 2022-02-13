@@ -29,9 +29,26 @@
 		.tusc-font{
 			font-family: 'tuscfont'
 		}
-		ul{
-			
-		}
+    ul.icons li::before {
+      padding-right:10pt;
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    ul.icons {
+      list-style-type:none;
+      padding-left:20pt;
+    }
+
+		@media only screen and (max-width: 600px) {
+      ul.icons li {
+        padding-bottom:15px;
+      }
+    }
     </style>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
@@ -121,6 +138,21 @@
 
 <p>Dave Nellist calls for nationalisation under democratic working-class control and management - to save jobs and keep skills in Birmingham.</p>		
 		
+<p><b>Dave Campaigns for...</b></p>
+
+<ul class="icons">
+  <li>Wage rises for all that at least keep pace with inflation to stop the cost of living squeeze!</li>
+  <li>An immediate £15 an hour minimum wage and an end to zero-hour contracts</li>
+  <li>An immediate 50% increase in state pensions and benefits</li>
+  <li>Save our NHS. No cuts, closures or privatisation. Free social care for all</li>
+  <li>Rent control and a major building programme of high-quality council homes</li>
+  <li>Re-nationalise energy companies, rail, Royal Mail and the other privatised utilities</li>
+  <li>Abolish the anti-trade union laws</li>
+  <li>Free education for all, from nursery to university. Abolish tuition fees now</li>
+  <li>A solution to climate change, including with a free to use expanded public transport system, instead of congestion charges</li>
+  <li>A socialist society, where the economy is planned sustainably and run democratically</li>
+</ul>
+
 	</div>
 </main>
 
