@@ -52,6 +52,17 @@
       ul.icons li {
         padding-bottom: 15px;
       }
+
+      .normal-font-if-small-window {
+        font-size:1em;
+      }
+    }
+
+    @media only screen and (min-width:600px)
+    {
+      .normal-font-if-small-window {
+        font-size:0.8em;
+      }
     }
   </style>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -266,7 +277,7 @@
             <p style="color:Red;font-size:0.7em;">On the bin workers' strike</p>
           </div>
           <h1 class="tusc-font" style="font-size:1.7em;">Dave campaigns for:</h1>
-          <span style="font-size:0.8em">
+          <span class="normal-font-if-small-window">
             <p>
               💰 Stop the cost of living squeeze! Wage rises for all that at least keep pace with inflation.
             </p>
